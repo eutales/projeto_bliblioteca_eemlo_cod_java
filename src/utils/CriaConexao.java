@@ -20,7 +20,7 @@ public class CriaConexao {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             System.out.println("Conectando ao banco de dados.");
-            return DriverManager.getConnection("jdbc:mysql://localhost/biblioteca", "root", "");
+            return DriverManager.getConnection("jdbc:mysql://localhost/biblioteca", "root", "P9544504");
         } catch (ClassNotFoundException e) {
             throw new SQLException(e.getMessage());
         }   
